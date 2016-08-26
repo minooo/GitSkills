@@ -1,3 +1,12 @@
+### git add <file> 把你的修改放到暂存区
+### git status 查看当前状态，是否有遗漏
+### git commit -m "something" 
+### git reset --hard + `commit id` 或者 类似于这样的`HEAD@{1}`版本号
+### git reset HEAD <file> 撤销当前的提交暂存区(git add)命令
+### git log --pretty=oneline 显示从最近到最远的提交日志，可以以此回到过去
+### git reflog 查看“提交命令”历史，可以以此回到未来。
+
+
 ### 推送到远程仓库 `git push -u origin master`
 实际上是把当前分支 `master` 推送到远程。由于远程库是空的，第一次推送`master`分支时，  
 加上了`-u`参数，
