@@ -31,9 +31,9 @@ git clone git@github.com:minooo/GitSkills
 只开发http端口的公司内部就无法使用`ssh`协议而只能使用`https`。
 
 ### 分支相关
-- git checkout -b dev 创建分支dev并切换到到该分支，相当于以下两条命令
-    git branch dev
-    git checkout dev
-- 用 `git branch` 查看当前分支
-- `git merge`用于合并指定分支到当前分支。
-- 合并后，可以删除分支了 `git branch -d dev`
+- 查看分支：`git branch`
+- 创建分支：`git branch <name>`
+- 切换分支：`git checkout <name>`
+- 创建+切换分支：`git checkout -b <name>`
+- 合并某分支到当前分支：`git merge <name>`
+- 删除分支：`git branch -d <name>`
