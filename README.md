@@ -2,6 +2,11 @@
 ### git status 查看当前状态，是否有遗漏
 ### git commit -m "something" 
 ### git reset --hard + `commit id` 或者 类似于这样的`HEAD@{1}`版本号
+### git checkout -- <file> 把文件在工作区的修改全部撤销，有两种情况
+- 修改后还没有放到暂存区
+- 文件已经添加到暂存区，又了修改，如果撤销就回到添加暂存区后的状态
+- 如果已经提交，则使用版本回退来达到撤销修改的目的。
+
 ### git reset HEAD <file> 撤销当前的提交暂存区(git add)命令
 ### git log --pretty=oneline 显示从最近到最远的提交日志，可以以此回到过去
 ### git reflog 查看“提交命令”历史，可以以此回到未来。
