@@ -39,5 +39,3 @@ git clone git@github.com:minooo/GitSkills
 - 合并某分支到当前分支：`git merge <name>`
 - 删除分支：`git branch -d <name>`
 - 删除远程分支 `git push origin --delete dev`
-
-master 也要来掺一脚
