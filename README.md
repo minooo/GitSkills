@@ -37,9 +37,9 @@ git clone git@github.com:minooo/GitSkills
 - 切换分支：`git checkout <name>`
 - 创建+切换分支：`git checkout -b <name>`
 - 合并某分支到当前分支：`git merge <name>`
+- 不用快速合并：`git merge --no-ff -m "merge with no-ff" dev` 这是有记录的合并，推荐这个
 - 删除分支：`git branch -d <name>`
 - 删除远程分支 `git push origin --delete dev`
 - 查看分支提交详细命令：`git log --graph --pretty=oneline --abbrev-commit`
 - 查看分支合并图：`git log --graph`
-
-这是一种意外
+- 一口气提交所有！ `git add --all`
