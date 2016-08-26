@@ -30,8 +30,10 @@ git clone git@github.com:minooo/GitSkills
 注意，使用`https`除了速度慢以外，有个最大的麻烦就是 **每次推送必须输入账号密码** ，但是在某些  
 只开发http端口的公司内部就无法使用`ssh`协议而只能使用`https`。
 
-### 创建分支，切换到分支
+### 分支相关
 - git checkout -b dev 创建分支dev并切换到到该分支，相当于以下两条命令
     git branch dev
     git checkout dev
 - 用 `git branch` 查看当前分支
+- `git merge`用于合并指定分支到当前分支。
+- 合并后，可以删除分支了 `git branch -d dev`
