@@ -44,3 +44,4 @@ git clone git@github.com:minooo/GitSkills
 - 查看分支提交详细命令：`git log --graph --pretty=oneline --abbrev-commit`
 - 查看分支合并图：`git log --graph`
 - 一口气提交所有！ `git add --all`
+- 强制当前提交推送到远程 `git push -f origin master`
