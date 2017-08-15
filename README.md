@@ -45,5 +45,6 @@ git clone git@github.com:minooo/GitSkills
 - 查看分支合并图：`git log --graph`
 - 一口气提交所有！ `git add --all`
 - 强制当前提交推送到远程 `git push -f origin master`  
+- 强制覆盖本地 首先： `git fetch --all` ，其次：`git reset --hard origin/master` 
 
 ### 让git对大小写敏感 `git config core.ignorecase false  `
