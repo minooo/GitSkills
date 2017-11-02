@@ -30,6 +30,17 @@ git clone git@github.com:minooo/GitSkills
 注意，使用`https`除了速度慢以外，有个最大的麻烦就是 **每次推送必须输入账号密码** ，但是在某些  
 只开发http端口的公司内部就无法使用`ssh`协议而只能使用`https`。
 
+### 文件处理
+- 删除某个文件 `git rm test.txt`, 然后保存 `git commit -m "del"`, 如果你删错了也可以恢复 `git checkout -- test.txt`
+
+### 临时处理 master bug，当前分支 dev 还在开发中，怎么办
+- 首先存储现场 `git stash` ，然后切到master处理bug, (最好在master另起一个分支解决），解决完bug后，合并到主分支，  
+删除bug分支后，切到dev 分支，重新开启当前开发任务，`git stash list`     
+还原现场有两种方式：
+- `git stash apply`,但是stash 内容不删除，可以使用 `git stash drop` 来删除
+- `git stash pop` 恢复的同时把stash内容也删除了。
+如果你多次 stash，先用 `git stash list` 查看，然后恢复指定的 stash, `git stash apply stash@{0}`
+
 ### 分支相关
 - 查看分支：`git branch`
 - 创建分支：`git branch <name>`
