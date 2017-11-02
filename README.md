@@ -34,7 +34,7 @@ git clone git@github.com:minooo/GitSkills
 - 删除某个文件 `git rm test.txt`, 然后保存 `git commit -m "del"`, 如果你删错了也可以恢复 `git checkout -- test.txt`
 
 ### 临时处理 master bug，当前分支 dev 还在开发中，怎么办
-- 首先存储现场 `git stash` ，然后切到master处理bug, (最好在master另起一个分支解决），解决完bug后，合并到主分支，  
+首先存储现场 `git stash` ，然后切到master处理bug, (最好在master另起一个分支解决），解决完bug后，合并到主分支，  
 删除bug分支后，切到dev 分支，重新开启当前开发任务，`git stash list`     
 还原现场有两种方式：
 - `git stash apply`,但是stash 内容不删除，可以使用 `git stash drop` 来删除
