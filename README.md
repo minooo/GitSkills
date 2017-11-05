@@ -59,5 +59,5 @@ git clone git@github.com:minooo/GitSkills
 - 强制覆盖本地 首先： `git fetch --all` ，其次：`git reset --hard origin/master` 
 
 ### 异常处理
-- 让git对大小写敏感 `git config core.ignorecase false  `
+- 让git对大小写敏感 `git config core.ignorecase false `
 - 拉取远程，或者切换分支时如果出现文件未跟踪错误 `git reset --hard origin/master`
