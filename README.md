@@ -61,8 +61,8 @@ git clone git@github.com:minooo/GitSkills
 ### 异常处理
 - 让git对大小写敏感 `git config core.ignorecase false `
 - 拉取远程，或者切换分支时如果出现文件未跟踪错误 `git reset --hard origin/master`
-- windows使用git时出现：warning: LF will be replaced by CRLF  
-    - 首先删除当前目录下的 `.git` 文件 `rimraf .git`  
-    - 禁用自动转换 `git config --global core.autocrlf false`  
-    - 重新初始化 `.git` 文件。`git init`。  
-    - 之后再次提交你的代码 `git add --all` ...  
+* windows使用git时出现：warning: LF will be replaced by CRLF
+    * 首先删除当前目录下的 `.git` 文件 `rimraf .git`
+    * 禁用自动转换 `git config --global core.autocrlf false`
+    * 重新初始化 `.git` 文件。`git init`
+    * 之后再次提交你的代码 `git add --all` ...
