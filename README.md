@@ -48,7 +48,7 @@ git clone git@github.com:minooo/GitSkills
 - 切换分支：`git checkout <name>`
 - 创建+切换分支：`git checkout -b <name>`
 - 合并某分支到当前分支：`git merge <name>`
-- 不用快速合并：`git merge --no-ff -m "merge with no-ff" dev` 这是有记录的合并，推荐这个
+- 不用快速合并：`git merge --no-ff -m "merge with no-ff" dev` 这是有记录的合并，推荐这个 --no-ff 表示禁用 Fast Forward 模式。这样合并后能看出曾经做过合并
 - 删除分支：`git branch -d <name>`
 - 强行删除：`git branch -D <name>` 用于删除一个没有被合并过的分支。
 - 删除远程分支 `git push origin --delete dev`
