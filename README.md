@@ -57,6 +57,7 @@ git clone git@github.com:minooo/GitSkills
 - 一口气提交所有！ `git add --all`
 - 强制当前提交推送到远程 `git push -f origin master`  
 - 强制覆盖本地 首先： `git fetch --all` ，其次：`git reset --hard origin/master` 
+- 把本地分支master与远程仓库origin里的分支gaga建立关联，你要切换到master分支上, `git push -u gaga`
 
 ### 异常处理
 * 让git对大小写敏感 `git config core.ignorecase false `
