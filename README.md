@@ -59,6 +59,11 @@ git clone git@github.com:minooo/GitSkills
 - 强制覆盖本地 首先： `git fetch --all` ，其次：`git reset --hard origin/master` 
 - 把本地分支master与远程仓库origin里的分支gaga建立关联，你要切换到master分支上, `git push -u gaga`
 
+- 查看当前远程仓库 git remote -v
+- 添加远程仓库 `git remote add origin https://...`
+- 添加额外的远程仓库（比如coading） `git remote add  https://...`
+- 一次提交所有远程仓库 `git push --all`
+
 ### 异常处理
 * 让git对大小写敏感 `git config core.ignorecase false `
 * 拉取远程，或者切换分支时如果出现文件未跟踪错误 `git reset --hard origin/master`
